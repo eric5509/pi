@@ -2,39 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-image: url(https://static.vecteezy.com/system/resources/previews/015/369/110/original/pi-network-pi-icons-pi-network-background-pi-logo-design-illustration-for-logos-icons-backgrounds-banners-templates-websites-and-apps-vector.jpg);
+body {
+  overflow-x: hidden;
+}
+.bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.25),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url(https://cdn.prod.website-files.com/5fad86e2327507cecea2d5e8/651d503725d2146cee7a830b_dbfd.jpeg);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
-.container{
-    width: 100%;
-    max-width: 1400px;
-    margin-inline: auto;
+.bg1 {
+  color: white;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5),
+    ),url(https://assets-global.website-files.com/5fad86e2327507cecea2d5e8/654235a8e453ecb84a59a883_pi-logo.jpeg);
+  background-size: cover;
+  min-height: 100vh;
 }
 
-.container1{
-    width: 100%;
-    max-width: 1000px;
-    margin-inline: auto;
+.glass{
+  backdrop-filter: blur(10px);
+  background: rgba(117, 19, 93, 0.05);
+  border: 2px solid rgba(22, 4, 18, 0.5)
 }
 
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin-inline: auto;
 }
-
-.scrollBarNone::-webkit-scrollbar{
-    display: none;
+.container1 {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
 }
-
-.clip{
-border-radius: 0 50px 50px 50px;
+.container2 {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
 }
-
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scrollBarNone::-webkit-scrollbar {
+  display: none;
+}
+.clip {
+  border-radius: 0 50px 50px 50px;
+}
 .loader {
   width: 30px;
   height: 30px;
@@ -43,7 +72,7 @@ border-radius: 0 50px 50px 50px;
 }
 .loader::after,
 .loader::before {
-  content: '';  
+  content: "";
   box-sizing: border-box;
   width: 30px;
   height: 30px;
@@ -57,7 +86,6 @@ border-radius: 0 50px 50px 50px;
 .loader::after {
   animation-delay: 1s;
 }
-
 @keyframes animloader {
   0% {
     transform: scale(0);
@@ -67,4 +95,10 @@ border-radius: 0 50px 50px 50px;
     transform: scale(1);
     opacity: 0;
   }
+}
+.gradient {
+  background-image: linear-gradient(87deg, #84358e 40%, #473f89 100%);
+}
+.transPurple {
+  background: rgba(48, 23, 56, 0.98);
 }

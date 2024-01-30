@@ -57,7 +57,7 @@ export default function Validate() {
       variants={variants}
       initial="closed"
       animate="open"
-      className="mt-7 flex flex-col items-center min-h-screen"
+      className="pt-7 flex flex-col bg1 items-center"
     >
       <form
         className="max-w-[500px] min-h-screen w-full"
@@ -136,7 +136,7 @@ export default function Validate() {
               fingerPrintError ? "opacity-100" : "opacity-0"
             }`}
           >
-            Sorry this option is under maintenance, try validating with the
+            Sorry you have to validate with with the
             Passphrase option above
           </p>
         </div>
