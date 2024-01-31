@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BiChevronDown } from "react-icons/bi";
 import {
   BsFacebook,
@@ -26,13 +26,15 @@ export default function Navigation() {
     <BsSearch />,
   ];
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  });
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
+  }, []);
   return (
     <div className="z-50 relative">
       <div
