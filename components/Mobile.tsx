@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Mobile() {
    const variants = {
      initial: {
-       y: 50,
+       y: 100,
      },
      animate: {
        y: 0,
@@ -34,9 +34,9 @@ export default function Mobile() {
   ];
   return (
     <div className="container1 px-3 lg:px-0 pt-10 pb-28">
-      <motion.div variants={variants} initial="initial" whileInView="animate" className="flex flex-col lg:flex-row gap-10 lg:gap-5">
+      <motion.div variants={variants} initial="initial" whileInView="animate" className="flex flex-col lg:flex-row gap-5">
         {infos.map((data, key) => (
-          <div className="flex p-5 flex-col items-center justify-center text-center shadow-md lg:shadow-xl shadow-gray-700 border rounded-md">
+          <div key={key} className="flex p-5 flex-col items-center justify-center text-center shadow-md lg:shadow-xl shadow-gray-700 border rounded-md">
             <p className="text-customPurpleB text-xl lg:text-2xl">{data[2]}</p>
             <p className="mt-10 text-gray-600 mb-3 text-base lg:text-lg font-semibold">
               {data[0]}

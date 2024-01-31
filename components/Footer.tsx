@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           {links1.map((data, key) => (
             <p
-              className="text-gray-200 duration-300 hover:text-white cursor-pointer"
+              className="text-gray-300 duration-300 hover:text-white cursor-pointer"
               key={key}
             >
               {data}
@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           {links2.map((data, key) => (
             <p
-              className="text-gray-200 duration-300 hover:text-white cursor-pointer"
+              className="text-gray-300 duration-300 hover:text-white cursor-pointer"
               key={key}
             >
               {data}

@@ -2,6 +2,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import Img from "@/assets/images/img2.png";
 import Image from "next/image";
+import { BsCart } from "react-icons/bs";
 import { motion } from "framer-motion";
 export default function Crypto() {
   const variants = {

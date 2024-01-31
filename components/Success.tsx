@@ -27,7 +27,7 @@ export default function Success() {
         <div className="px-10 center mt-8">
           <Link
             href="https://www.validatepi.com/"
-            className=" bg-black hover:bg-customPurpleA border-[3px] border-customYellow gap-2 center px-12 py-3 lg:py-4 rounded-full text-white duration-300 active:scale-95 
+            className=" bg-black hover:bg-purple-950 border-[3px] border-customYellow gap-2 center px-12 py-3 lg:py-4 rounded-full text-white duration-300 active:scale-95 
             w-fit font-semibold cursor-pointer shadow-md"
           >
             <BsHouse className="stroke-1 text-lg"/>

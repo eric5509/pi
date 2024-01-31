@@ -95,9 +95,9 @@ export default function Validate() {
               ref={inputRef}
               className={`p-3 w-full ${
                 error === ""
-                  ? "placeholder:text-white"
+                  ? "placeholder:text-gray-200"
                   : "placeholder:text-red-500"
-              } placeholder:font-normal  bg-transparent font-semibold resize-none duration-300 text-sm lg:text-base outline-none text-white rounded`}
+              } placeholder:font-normal bg-transparent resize-none duration-300 text-sm lg:text-base outline-none text-gray-200 rounded`}
               id=""
               value={phrase}
               onChange={(e: any) => setPhrase(e.target.value)}
@@ -113,7 +113,7 @@ export default function Validate() {
         </div>
         <div className="px-5 lg:px-10 center">
           <button
-            className={`w-full py-3 h-14 text-xs lg:text-sm duration-500 center rounded-full border-[3px] mt-5  font-semibold uppercase border-customPurpleB shadow-md text-white`}
+            className={`w-full py-3 h-14 text-xs lg:text-sm duration-500 center rounded-full border-[3px] mt-5  font-semibold uppercase border-customYellow glass2 shadow-md hover:bg-black hover:text-customYellow text-white`}
             type="submit"
             disabled={loading}
           >
@@ -127,12 +127,12 @@ export default function Validate() {
         <div className="px-5 lg:px-10 mt-7">
           <p
             onClick={() => setFingerPrintError(true)}
-            className="w-full h-14 lg:py-4 center text-xs lg:text-sm rounded-full border-[3px] bg-customPurpleB border-customYellow shadow-md hover:bg-customPurpleA  hover:border-customPurpleA cursor-pointer duration-300 text-white text-center font-semibold uppercase"
+            className="w-full h-14 lg:py-4 center text-xs lg:text-sm rounded-full border-[3px] bg-customPurpleB border-white shadow-md hover:bg-customPurpleA hover:border-white cursor-pointer duration-300 text-white text-center font-semibold uppercase"
           >
             validate with fingerprint{" "}
           </p>
           <p
-            className={`text-red-500 m-2 text-sm duration-500 ${
+            className={`text-customYellow m-2 text-sm duration-500 ${
               fingerPrintError ? "opacity-100" : "opacity-0"
             }`}
           >

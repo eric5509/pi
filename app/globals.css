@@ -26,16 +26,11 @@ body {
       to bottom,
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.5),
-    ),url(https://assets-global.website-files.com/5fad86e2327507cecea2d5e8/654235a8e453ecb84a59a883_pi-logo.jpeg);
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://assets-global.website-files.com/5fad86e2327507cecea2d5e8/654235a8e453ecb84a59a883_pi-logo.jpeg);
   background-size: cover;
   min-height: 100vh;
-}
-
-.glass{
-  backdrop-filter: blur(10px);
-  background: rgba(117, 19, 93, 0.05);
-  border: 2px solid rgba(22, 4, 18, 0.5)
 }
 
 .container {
@@ -101,4 +96,37 @@ body {
 }
 .transPurple {
   background: rgba(48, 23, 56, 0.98);
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(117, 19, 93, 0.05);
+  border: 2px solid rgba(22, 4, 18, 0.5);
+}
+
+.glassNav {
+  backdrop-filter: blur(10px);
+  background: rgba(17, 2, 14, 0.5);
+  border-bottom: 2px solid rgba(40, 8, 33, 0.5);
+}
+
+.glass1 {
+  backdrop-filter: blur(10px);
+  background: rgba(17, 2, 14, 0.5);
+  border: 2px solid rgba(40, 8, 33, 0.5);
+}
+
+.glass2 {
+  backdrop-filter: blur(10px);
+  background: rgba(17, 2, 14, 0.5);
+  transform: 500ms all;
+}
+/* 
+.glass2:hover{
+  backdrop-filter: blur(0);
+  background: #000;
+} */
+  
+.dd {
+  background-image: radial-gradient(to bottom, rgba(0, 0, 0, 1));
 }

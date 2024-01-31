@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function SectionA() {
     const variants = {
       initial: {
-        y: 50,
+        y: 75,
       },
       animate: {
         y: 0,
@@ -33,16 +33,16 @@ export default function SectionA() {
     <div className="min-h-screen w-full bg">
       <div className="container z-20 relative grid grid-cols-1 gap-10 xl:grid-cols-[2fr_1fr]">
         <div className="pt-36 px-3 xl:px-0">
-          <motion.p variants={variants2} initial="initial" animate="animate" className="text-3xl lg:text-[53px] font-semibold lg:leading-[1.2] mb-6">
+          <motion.p variants={variants2} initial="initial" whileInView="animate" className="text-3xl lg:text-[53px] font-semibold lg:leading-[1.2] mb-6">
             The First Digital Currency You Can Mine On Your Phone
           </motion.p>
-          <motion.p variants={variants} initial="initial" animate="animate"  className="text-base lg:text-xl font- mb-4 lg:mb-6 lg:w-[550px]">
+          <motion.p variants={variants} initial="initial" whileInView="animate"  className="text-base lg:text-xl font- mb-4 lg:mb-6 lg:w-[550px]">
             Start mining Pi cryptocurrency today with our free, energy-light
             mobile app!
           </motion.p>
           <Link
             href={"/validate"}
-            className="px-5 lg:px-7 py-3 duration-300 cursor-pointer w-fit rounded-md center gap-3 text-customYellow hover:shadow-black hover:bg-black hover:shadow font-semibold capitalize tex-xs lg:text-base flex border-2 border-customYellow"
+            className="px-5 lg:px-7 py-3 duration-500 cursor-pointer w-fit rounded-md center gap-3 text-customYellow hover:shadow-black hover:bg-black hover:shadow hover:glass font-semibold capitalize tex-xs lg:text-base flex border-2 border-customYellow"
           >
             <p>Validate your wallet</p>
             <BsCheck className="text-2xl lg:text-3xl" />
@@ -57,9 +57,9 @@ export default function SectionA() {
             alt=""
             className="absolute hidden xl:block h-[833px] w-[500px] -right-10 -top-5"
           />
-          <div className="px-3 w-full xl:px-0">
+          <div className="p-4 w-full h-80 bg-transparent xl:px-0">
             <iframe
-              className="elementor-video h-60 w-full xl:hidden rounded-lg"
+              className="elementor-video h-full w-full xl:hidden rounded-lg"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               title="Pi"
               src="https://www.youtube.com/embed/MsOaC61cR3U?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fvalidatepi.com&amp;widgetid=1"
