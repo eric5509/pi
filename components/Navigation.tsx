@@ -60,7 +60,7 @@ export default function Navigation() {
             <div className="flex gap-5">
               {links.map((data, key) => (
                 <div
-                  className="flex gap-1 items-center cursor-pointer text-gray-200 group relative after:absolute duration-300 after:duration-300 after:top-full after:h-[2.5px] after:left-0 after:w-0 after:bg-white after:rounded-full hover:after:w-full"
+                  className="flex gap-1 items-center cursor-pointer text-gray-200 group relative after:absolute duration-300 after:duration-300 after:top-5 after:h-[2.5px] after:left-0 after:w-0 after:bg-white after:rounded-full hover:after:w-full"
                   key={key}
                 >
                   <p className="duration-300 group-hover:text-white">{data}</p>
@@ -76,7 +76,7 @@ export default function Navigation() {
                             key={key}
                             className="mt-2 group-hover:mt-0 duration-500"
                           >
-                            <p className="relative after:absolute text-black duration-300 after:duration-300 after:top-full after:h-[2.5px] after:left-0 w-fit after:w-0 after:bg-black after:rounded-full hover:after:w-full">
+                            <p className="relative after:absolute text-black duration-300 after:duration-300 after:top-5 after:h-[2.5px] after:left-0 w-fit after:w-0 after:bg-black after:rounded-full hover:after:w-full">
                               {data}
                             </p>
                           </div>
@@ -88,7 +88,7 @@ export default function Navigation() {
                     <div className="absolute opacity-0 invisible mt-2 group-hover:mt-0 duration-500 group-hover:opacity-100 group-hover:visible top-full left-0">
                       <div className="h-6 "></div>
                       <div className="p-6 w-56 rounded-lg flex flex-col gap-2 shadow-md bg-white">
-                        <p className="relative after:absolute text-black w-fit duration-300 after:duration-300 after:top-full after:h-[2.5px] after:left-0 after:w-0 after:bg-black after:rounded-full hover:after:w-full">
+                        <p className="relative after:absolute text-black w-fit duration-300 after:duration-300 after:top-5 after:h-[2.5px] after:left-0 after:w-0 after:bg-black after:rounded-full hover:after:w-full">
                           Pi Hackathon
                         </p>
                       </div>
