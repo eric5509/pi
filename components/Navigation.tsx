@@ -44,7 +44,7 @@ export default function Navigation() {
             : "border-transparent h-[100px] shadow-transparent"
         }`}
       >
-        <div className="container h-24 flex justify-between items-center px-3">
+        <div className="container h-24 flex justify-between items-center">
           <Link href={"/"}>
             <Image
               src={
