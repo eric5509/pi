@@ -6,7 +6,7 @@ import Mobile from "@/components/Mobile";
 import Navigation from "@/components/Navigation";
 import SectionA from "@/components/SectionA";
 
-export default function HomePage() {
+export defalt function HomePage() {
   return (
     <main className="overflow-x-hidden">
       <Navigation />
